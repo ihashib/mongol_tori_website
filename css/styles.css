@@ -45,14 +45,14 @@ a:active{
     word-spacing: 1em;
 }
 /*big screen*/
-@media(min-width: 700px){
+@media (max-width: 10800px) and (min-width: 921px){
     .small_scr{
         display: none;
     }
     
 } 
 /*small screen*/
-@media(max-width: 701px){
+@media (min-width:180px) and (max-width: 920px){
     .nav_list{
         display: none;
     }
