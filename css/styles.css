@@ -4,23 +4,32 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #e2e2e2;
+    background-color: 	#F0F0F0;
     font-family: Verdana, Arial, sans-serif;
 }
 
 /*global*/
 .container{
-    width: 98%;
+    width: 88%;
     margin:auto;
 }
 
+/*buttons*/
+.button{
+    background-color: #000000;
+    border: #000000 1px solid;
+    color: #ffffff;
+    padding: 5px 2px;
+    margin: 20px;
+    font-size: 16px;
+}
 /*global link style*/
 a{
     text-decoration: none;
     color: #ffffff;
     font-size: 130%;
     text-transform: capitalize;
-    
+    background-color: #000000;
 }
 a:hover{
     background-color: #ffffff;
@@ -33,62 +42,34 @@ a:active{
 /*navigation bar*/
 header{
     background-color: black;
-    min-height: 120px;
-    padding: 2px 0px;
-    border-bottom: orange 3px solid;
+    min-height: 100px;
+    border-bottom: #ff751a 4px solid;
 }
 .mt_logo{
-    height: 120px;
-    padding: 10px 20px;
-    float: left;
+    max-height: 100px;
+    padding: 10px 50px;
+    float: right;
 }
 .nav_list li{
     display: inline;
     padding: 0 10px 0 10px;
 }
 nav{
-    float: right;
+    float: left;
     margin-right: 0px;
-    margin-top: 45px;
+    margin-top: 40px;
 }
-/*big screen*/
-@media (max-width: 10800px) and (min-width: 921px){
-    .small_scr{
-        display: none;
-    }
-    
-} 
-/*small screen*/
-@media (min-width:180px) and (max-width: 920px){
-    .nav_list{
-        display: none;
-    }
-    a{
-        padding:5px;
-    }
-    .small_scr{
-        position: absolute;
-        display: inline-block;
-        left: 80%;
-        width: 30px;
-    }
-    .nav_list li{
-        display: block;
-        text-align: center;
-        border-bottom: 1px solid #e2e2e2;
-        padding:5px;
-        margin: 0px;
-    }  
-    nav:hover .nav_list{
-        display: block;
-        position: absolute;
-        left: 70%;
-        top: 11%;
-        background-color: #000000;
-        width: 25%;
-    }
+/*link*/
+/*fixed icons*/
+.links{
+    position:fixed;
+    top: 400px;
 }
-
+.links img{
+    display: block;
+    width: 6%;
+    height: auto;
+}
 /*main image*/
 .main_img{
     display: block;
@@ -97,4 +78,117 @@ nav{
     width: 100%;
 }
 
+/*about mt*/
+.intro h2{
+    clear:left;
+    display: block;
+    border-radius: .3em;
+    margin: 30px 0px 5px 0px;
+    padding: 10px;
+    text-align: center;
+    color: #404040;
+    background-color: #DCDCDC;
+}
+.intro h3{
+    clear:left;
+    display: block;
+    border-radius: .3em;
+    margin: 5px 0px 5px 0px;
+    padding: 10px;
+    text-align: center;
+    font-weight: lighter;
+    color: #404040;
+    background-color: #DCDCDC;
+}
+.text_box{
+    float: left;
+    width: 50%;
+    border-radius: .2em;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #E0E0E0;
+    color: 	#404040;
+    line-height: 1.4em;
+    font-size: 20px;
+    text-align: justify;
+}
+.intro .video{
+    float:left;
+    width:50%;
+    margin: 55px 0px;
+    padding-left: 5px;
+    border: 0px;
+}
+.intro .image{
+    float:left;
+    margin: 40px 0px;
+    padding-right: 5px;
+}
+/*Footer*/
+.footer{
+    display: block;
+    background-color: #000000;
+    min-height: 20px;
+    padding:15px;
+    border-top: #ff751a 4px solid;
+    text-align: center;
+    font-weight: lighter;
+    color: #F0F0F0;
+}
+
+/*Media queries*/
+/*big screen*/
+@media (max-width: 10800px) and (min-width: 981px){
+    .small_scr{
+        display: none;
+    }    
+} 
+/*small screen*/
+@media (max-width: 981px){
+    .nav_list{
+        display: none;
+    }
+    .small_scr{
+        position: absolute;
+        display: inline-block;
+        top: 7%;
+        left: 8%;
+        width: 30px;
+    }
+    .nav_list a{
+        display: block;
+        padding:0px;
+    }
+    .nav_list li{
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid #e2e2e2;
+        padding:0px;
+        margin: 0px;
+    }  
+    nav:hover .nav_list{
+        display: block;
+        position: absolute;
+        left: 7.5%;
+        top: 10.4%;
+        background-color: #000000;
+        width: 22%;
+        padding: 3px;
+    }
+    .text_box{
+        float: none;
+        width: 100%;
+    }
+    .intro .video iframe{
+        float: none;
+        width: 200%;
+        height: auto;
+    }
+    .intro img{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
 
